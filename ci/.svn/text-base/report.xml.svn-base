@@ -1,0 +1,23 @@
+<testsuite failures='0' time='73.63' errors='0' skipped='0' tests='10' name='tabview'>
+    <properties>
+        <property name='descriptor' value='test_descriptor.json'/>
+    </properties>
+    <testcase time='35.5' classname='Firefox 11.0.0.testCaseyui_3_4_1_3_1335855657183_27'
+              name='dom::test tab structure'/>
+    <testcase time='35.5' classname='Firefox 11.0.0.testCaseyui_3_4_1_3_1335855657183_27'
+              name='dom::test tab structure::test tab selection'/>
+    <testcase time='7.5' classname='Chrome 18.0.1025.testCaseyui_3_4_1_3_1335855619257_28'
+              name='dom::test tab structure'/>
+    <testcase time='7.5' classname='Chrome 18.0.1025.testCaseyui_3_4_1_3_1335855619257_28'
+              name='dom::test tab structure::test tab selection'/>
+    <testcase time='6' classname='Firefox 11.0.0.testCaseyui_3_4_1_4_1335855673986_27'
+              name='dom_int::test tab structure'/>
+    <testcase time='6' classname='Firefox 11.0.0.testCaseyui_3_4_1_4_1335855673986_27'
+              name='dom_int::test tab structure::test tab selection'/>
+    <testcase time='7' classname='Chrome 18.0.1025.testCaseyui_3_4_1_4_1335855673567_27'
+              name='dom_int::test tab structure'/>
+    <testcase time='7' classname='Chrome 18.0.1025.testCaseyui_3_4_1_4_1335855673567_27'
+              name='dom_int::test tab structure::test tab selection'/>
+    <testcase time='99' classname='Firefox 11.0.0.testCaseyui_3_4_1_4_1335855687974_27' name='int::test tab presence'/>
+    <testcase time='4' classname='Chrome 18.0.1025.testCaseyui_3_4_1_4_1335855682993_27' name='int::test tab presence'/>
+</testsuite>

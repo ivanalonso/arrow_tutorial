@@ -1,0 +1,128 @@
+[
+    {
+        "settings": [ "master" ],
+
+        "name": "controllers",
+
+        "config": {
+            "bouncerUserName": "user",
+            "bouncerPassword": "pass",
+            "yahooUserName": "user",
+            "yahooPassword": "pass",
+            "baseUrl": "http://enoughoffice.corp.yahoo.com:8033"
+        },
+
+        "dataprovider" : {
+            
+            "text_enter" : {
+                "group" : "func",
+                "params" :{
+                    "scenario": [
+                        {
+                            "page": "http://finance.yahoo.com"
+                        },
+                        {
+                            "controller": "locator",
+                            "params": {
+                                "value": "#txtQuotes",
+                                "text": "yhoo"
+                            }
+                        },
+                        {
+                            "controller": "locator",
+                            "params": {
+                                "value": "#btnQuotes",
+                                "click": true
+                            }
+                        },
+                        {
+                             "test": "test-quote.js",
+                             "title": "Yahoo! News - Latest News & Headlines"
+                        }
+                    ]
+                }
+            },
+
+            "cross_domain" : {
+                "group" : "func",
+                "params" :{
+                    "scenario": [
+                        {
+                            "page": "$$config.baseUrl$$/media/test_common/lego_test/demo/tabview/src/tabview.html"
+                        },
+                        {
+                            "controller": "locator",
+                            "params": {
+                                "using": "link text",
+                                "value": "News",
+                                "click": true
+                            }
+                        },
+                        {
+                             "test": "test-title.js",
+                             "title": "Yahoo! News - Latest News & Headlines"
+                        }
+                    ]
+                }
+            },
+            "same_domain" : {
+                "group" : "func",
+
+                "params": {
+                    "scenario": [
+                        {
+                            "page": "$$config.baseUrl$$/media/test_common/lego_test/demo/tabview/src/tabview.html"
+                        },
+                        {
+                            "controller": "locator",
+                            "params": {
+                                "using": "link text",
+                                "value": "More",
+                                "click": true
+                            }
+                        },
+                        {
+                             "test" : "test-title.js",
+                             "title": "Asparagus"
+                        }
+                    ]
+                }
+            },
+
+            "yahoo_login" : {
+                "group" : "smoke",
+                "params" :{
+                    "scenario": [
+                        {
+                            "controller": "yahooLogin"
+                        },
+                        {
+                            "test": "test-title.js",
+                            "page": "http://www.yahoo.com",
+                            "title": "Yahoo!"
+                        }
+                    ]
+                 }
+            },
+            "bouncer_login" : {
+                "group" : "smoke",
+                "params" :{
+                    "scenario": [
+                        {
+                            "controller": "bouncerLogin"
+                        },
+                        {
+                            "test": "test-title.js",
+                            "page": "http://www.yahoo.com",
+                            "title": "Yahoo!"
+                        }
+                    ]
+                 }
+            }
+        }
+    },
+    {
+        "settings": [ "environment:development" ]
+    }
+
+]

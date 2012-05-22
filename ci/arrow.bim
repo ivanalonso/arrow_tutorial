@@ -1,0 +1,19 @@
+# Configure the yroot image for buildyblocks_yroot_create
+yroot: lego_arrow
+yroot_x86_64_rhel_image:  5.4-20090902
+yroot_remove: false
+yroot_deletion: never
+
+# Used by buildyblocks_yroot_create (on yroot creation) and
+# buildyblocks_provision (every build).  Note that while
+# we can use different statefiles per OS and per architecture,
+# we are only using different statefiles per OS here.
+
+# test this locally to avoid having to check out more dirs
+provision_x86_64_rhel_statefile: ./arrow.state
+
+
+# Copy in the ssh private key and the keydb for bouncer access
+yroot_copy_files:
+     /home/y/conf/keydb/globalmediaci_distkey
+     /home/y/conf/keydb/l10n.automation.keydb

@@ -1,0 +1,36 @@
+[
+    {
+        "dimensions": [
+            {
+                "environment": 
+                {
+                    "int1": {
+                        "test": null
+                    },
+                    "int2": {
+                        "test": null
+                    },
+                    "int3": {
+                        "test": null
+                    },
+                    "qa1": {
+                        "test": null
+                    }
+                    ,
+                    "qa2": {
+                        "test": null
+                    },
+                    "qa3": {
+                        "test": null
+                    },
+                    "stage": {
+                        "test": null
+                    },
+                    "production": {
+                        "test": null
+                    }
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,38 @@
+[
+    {
+        "settings": [ "master" ],
+
+        "name" : "Media_Most_Popular",
+
+        "commonlib" : "./mediamostpopular-lib.js",
+ 
+         "config" :{
+            "defaultAppHost" : "http://news.yahoo.com/europe"
+        },
+
+        "dataprovider" : {
+            
+            "functional_most_pop" : {
+                "params" : {
+                    "test" : "mediamostpopular-func.js",
+                    "page" : "$$config.defaultAppHost$$"
+                }, 
+                "group" : "func"
+            },
+
+           "smoke_most_pop" : {
+                "params" : {
+                    "test" : "mediamostpopular-smoke.js",
+                    "page" : "$$config.defaultAppHost$$"
+                  },
+                "group" : "smoke"
+            }
+
+        }
+    },
+
+    {
+        "settings": [ "environment:development" ]
+    }
+
+]

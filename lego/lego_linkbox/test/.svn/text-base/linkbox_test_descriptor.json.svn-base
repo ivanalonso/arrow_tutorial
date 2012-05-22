@@ -1,0 +1,121 @@
+[
+    {
+        "settings": [ "master" ],
+
+        "name" : "linkbox",
+
+        "commonlib" : "../libs/linkbox-lib.js",
+ 
+         "config" :{
+            "defaultAppHost" : "http://en-us.qe.qa2.global.media.yahoo.com"
+        },
+
+        "dataprovider" : {
+            
+           "MediaLinkBox1" : {
+                "params" : {
+                    "test" : "MediaLinkBox-func-more.js",
+                    "page" : "$$config.defaultAppHost$$/liststrack/linkboxproject/"
+                  },
+                "group" : "func"
+            },
+
+           "MediaLinkBox2" : {
+                "params" : {
+                    "test" : "MediaLinkBox-func.js",
+                    "page" : "$$config.defaultAppHost$$/liststrack/linkboxproject/"
+                  },
+                "group" : "func"
+            },
+            
+            "MediaLinkBox3" : {
+                "params" : {
+                    "test" : "MediaLinkBox-smoke.js",
+                    "page" : "$$config.defaultAppHost$$/liststrack/linkboxproject/"
+                  },
+                "group" : "smoke"
+            },
+
+           "MediaNavBox1" : {
+                "params" : {
+                    "test" : "MediaNavBox-func.js",
+                    "page" : "$$config.defaultAppHost$$/liststrack/linkboxproject/"
+                  },
+                "group" : "func"
+            },
+
+            "MediaNavBox2" : {
+                "params" : {
+                    "test" : "MediaNavBox-smoke.js",
+                    "page" : "$$config.defaultAppHost$$/liststrack/linkboxproject/"
+                  },
+                "group" : "smoke"
+            }
+        }
+    },
+
+    {
+        "settings": [ "environment:int1" ],
+        
+        "config" :{
+            "defaultAppHost" : "http://en-us.qe.int1.global.media.yahoo.com"
+        }
+    },
+    
+    {
+        "settings": [ "environment:int2" ],
+        
+        "config" :{
+            "defaultAppHost" : "http://en-us.qe.int2.global.media.yahoo.com"
+        }
+    },
+    
+    {
+        "settings": [ "environment:int3" ],
+        
+        "config" :{
+            "defaultAppHost" : "http://en-us.qe.int3.global.media.yahoo.com"
+        }
+    },
+    
+    {
+        "settings": [ "environment:qa1" ],
+        
+        "config" :{
+            "defaultAppHost" : "http://en-us.qe.qa1.global.media.yahoo.com"
+        }
+    },
+    
+    {
+        "settings": [ "environment:qa2" ],
+        
+        "config" :{
+            "defaultAppHost" : "http://en-us.qe.qa2.global.media.yahoo.com"
+        }
+    },
+    
+    {
+        "settings": [ "environment:qa3" ],
+        
+        "config" :{
+            "defaultAppHost" : "http://en-us.qe.qa3.global.media.yahoo.com"
+        }
+    },
+    
+    {
+        "settings": [ "environment:stage" ],
+        
+        "config" :{
+            "defaultAppHost" : "http://stageurl.com"
+        }
+    },
+    
+    {
+        "settings": [ "environment:production" ],
+        
+        "config" :{
+            "defaultAppHost" : "http://production.yahoo.com"
+        }
+    }
+
+]
